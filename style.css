@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+}
+
+h1{
+    color: brown;
+    border-width: 10cap;
+    font-size: 80px;
+}
+
+button{
+    background-color: royalblue;
+    border: 10px;
+    font-style: italic;
+    font-size: large;
+}

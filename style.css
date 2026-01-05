@@ -15,27 +15,66 @@ main {
     min-height: 100%;
     width: 100%;
     background-color: black;
-    display: flex;
+    display : flex;
     align-items: center;
     justify-content: center;
 }
 
-button{
-    padding: 10px 20px;
-    background-color: skyblue;
-    color: black;
-    border: none;
+.card{
+    height : 200px;
+    width : 500px;
+    background-color:white;
     border-radius: 10px;
-    cursor: pointer;
-    position : relative;
-    z-index: 10;
+    padding: 30px;
 }
 
-button:active{
-    scale : 0.95;
+.card p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-h1{
-    color: aliceblue;
-    font-size: medium;
+.card span{
+    font-weight: 600;
+    color: royalblue;
+}
+
+.outer{
+    height: 20px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgb(185, 184, 184);
+}
+
+.inner{
+    height:100%;
+    width: 5%;
+    border-radius: 50px;
+    background-color: green;
+}
+
+.bottom{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top:20px;
+}
+
+.bottom h2{
+    font-size: 50px;
+}
+
+.bottom button{
+    padding: 12px 25px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    cursor:pointer;
+}
+
+.bottom button:active{
+    scale: 0.95;
 }

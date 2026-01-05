@@ -1,21 +1,29 @@
+var grow = 0
+
 var btn = document.querySelector('button');
+var h2 = document.querySelector('h2');
+var inner = document.querySelector('.inner');
 
-var main = document.querySelector('main')
-
-var arr = ['Hey ! I am Vedant', 'Sheryians is best', 'Sarthak Bhaiya is Best', 'Harsh Bhaiya is best','JS is Love','I have got 30 LPA package', 'loda lassan'];
- 
 btn.addEventListener('click',function(){
-    var h1 = document.createElement('h1')
-    var a = Math.floor(Math.random()*arr.length)
-    var x = Math.floor(Math.random()*100)
-    var y = Math.floor(Math.random()*100)
-    var r = Math.floor(Math.random()*361)
-    var scl = Math.floor(Math.random()*4)
-    h1.innerHTML = arr[a]
-    h1.style.position = 'absolute'
-    h1.style.left = x+'%'
-    h1.style.top = y+'%'
-    h1.style.rotate = r+'deg'
-    h1.style.scale = scl
-    main.appendChild(h1);
+    btn.style.pointerEvents = 'none'
+
+    var num = 30+Math.floor(Math.random()*50);
+    
+
+    var int = setInterval(function(){
+    grow++
+    h2.innerHTML = grow+'%';
+    inner.style.width = grow+'%';
+   },num);
+
+   setTimeout(function(){
+    clearInterval(int)
+    btn.innerHTML = 'Downloaded'
+    btn.style.opacity = 0.5;
+    
+   },num*100); 
+
+   console.log(`Your file is downloaded in ${num/10} seconds` )
+
 })
+
